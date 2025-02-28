@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style type="text/css">
+			.top-inf  > a{
+					margin:0px;
+					color: white;
+					text-decoration: none;
+					padding-bottom:2px;
+
+				}
+			.top-inf, .top-inf-2 {
+					padding: 0px;
+					height: 26px;
+				}
+			.icon{
+					margin-right: 5px;
+				}
+			.top-inf-2{
+					padding-left:5px ;
+				}
+			.contactIcon{
+					margin-left: auto;
+				}
+			.contactIcon  > a{
+					padding: 4px;
+					color: white;
+				}
+			.top-nav{
+					background-color:#222222 ;
+				}
+			.top-inf-2 > p{
+					color: white;
+					padding-left: 20px;
+				}
+			.logoSection{
+					height: 100px;
+					margin-left: auto;
+					margin-right: auto;
+					border-bottom: 1px solid #EAEAEA;
+				}
+			.logoCon{
+					max-width: 100%;
+					width: 100%;
+					height: 100px;
+					text-align: center;
+					line-height: 100px;
+
+				}
+			nav{
+					height: 60px;
+					border-bottom: 1px solid #EAEAEA;
+				    position: relative;
+				    z-index: 999;
+
+				}
+			.menu {
+					list-style-type: none;
+					margin-left: auto;
+					margin-right: auto;
+					width: 600px;
+					height: 60px;
+					margin-bottom: 0px;
+					padding-left: 0px;
+					text-align: center;
+					line-height:60px ;
+				}
+
+			.menu > li {
+					display: inline-block;
+					position: relative;
+					
+				}
+			.menu > li:first-child  > a{
+				color: black;
+			}
+			.menu  > li  > a{
+/*					display: block;*/
+					padding: 15px 8px;
+					text-decoration: none;
+					color: #666;
+					
+
+				}
+			.menu  > li:hover > a{
+				
+				color: black;
+			}
+	 		.subMenu{
+	 			position: absolute;
+	 			top:60px;
+	 			padding: 0px;
+	 			list-style-type: none;
+	 			margin-left: 12px;
+	 			display: none;
+	 			border: 1px solid #eaeaea;
+	 			box-shadow: 0 1px 4px 0 rgba(225, 225, 225, 0.6);
+	 			padding: 9px 0px;
+	 			background-color: white;
+	 		}
+	 		.menu > li:hover >.subMenu{
+	 			display: block;
+	 			
+	 		}
+	 		.menu > li:hover >.bigMenu{
+	 			display: block;
+	 			
+	 		}
+	 		.subMenu > li:hover >a{
+	 			background-color: #C7B39A;
+	 			color: #FFF;
+	 		}
+	 		.subMenu > li{
+	 			line-height: 20px; 
+	 		}
+	 		.subMenu > li > a{
+	 			display: block;
+	 			text-decoration: none;
+	 			color: #666;
+	 			width: 200px;
+	 			text-align: left;
+	 			padding : 6px 18px;
+	 			border:none;
+	 			cursor: pointer;
+	 		}
+	 		.bigMenu > li{
+	 			display: inline-block;
+	 			border-right: 1px solid  #eaeaea;
+	 			
+	 			float: left ;
+	 			width: 322px;
+	 			padding: 24px 0px;
+
+	 		}
+	 		
+	 		.bigMenu{
+	 			width: 1290px;
+	 			position: absolute;
+	 			top:50px;
+	 			right: -600px;
+	 			margin: 0;
+	 			padding: 0;
+	 			border: 1px solid #eaeaea;
+	 			text-align: center;
+	 			display: none;
+	 			background-color: white;
+
+
+	 		}
+	 		.bigMenu > li > ul{
+	 				list-style-type: none;
+	 				padding-left: 0px;
+	 		}
+	 		.bigMenu > li:last-child{
+	 			float:right;
+	 			border-right: none;
+
+	 		}
+	 		.bigMenu > li:last-child > ul{
+	 			height: 168px;
+	 			
+	 		}
+	 		.bigMenu > li > ul > li{
+	 			padding: 6px 18px;
+	 			text-align: left;
+	 			line-height: 20px;
+
+	 		}
+	 		.title > h1{
+	 			text-align: left;
+	 			font-size: 20px;
+	 			padding-left: 18px;
+	 			
+	 		}
+	 		.bigMenu > li > ul > li > a{
+	 			text-decoration: none;
+	 			color: #666;
+	 		}
+	 		.bigMenu > li > ul > li:hover{
+	 			background-color: #c7b39a;
+	 		
+	 		}
+	 		.bigMenu > li > ul > li:hover a{
+	 		
+	 			color: white;
+	 		}
+	 		.Blog{
+	 			width: 644px!important;
+	 			height: 200px;
+	 		}
+	 		body{
+	 			font-family: "Open Sans", "Old Standard TT",sans-serif;
+	 		}
+	 		.carousel-item{
+	 			max-width: 100%;
+    			height: 600px;
+    		}
+    		.firstBackground{
+    			background-image:url('./Images/Slider 1.jpg') ;
+    			background-size: cover;
+    			background-position: center;
+
+    		}
+    		.secondBackground{
+    			background-image:url('./Images/Slider 2.jpg') ;
+    			background-size: cover;
+    			background-position: center;
+    		}
+    		.section1{
+    			position: relative;
+    		}
+    		.form{
+    			height: 289px;
+    			position: absolute;
+    			top: 170px;
+    			right:140px;
+    			max-width: ;			
+    		}
+    		.caroulTitle{
+    			width: 100%;
+    			height: 200px;
+    			position: absolute;
+    			top: 200px;
+    			right: 0;
+
+    			
+    		}
+    		.content > h1{
+    			padding-left: 60px;
+    			font-size: 60px;
+    			color: white;
+
+    		}
+    		.subTitle{
+    			padding-top: 8px;
+    			padding-bottom: 10px;
+    			margin-left: 65px;
+    			color: white;
+    			width: 450px;
+    			font-size: 20px;
+
+    		}
+    		
+    		.form-group{
+    			margin-top:15px;
+    			padding-left: 10px;
+    			padding-right: 10px;
+    		}
+    		.btnContact{
+    			margin-top: 20px;
+    			padding-left: 15px;
+    			padding-right: 15px;
+    			margin-left: auto;
+     			width: 400px;
+    			height: 45px;
+    			margin-bottom: 25px;
+    		
+    			border-radius: 10px;
+    			background-color: #c7b39a;
+    			color: white;
+    		}
+    		.btnContact:hover{
+    			background-color:  rgba(176, 158, 141, 0.8);
+    		}
+    		.form-group{
+    			text-align: left!important;
+    			color: rgba(255, 255, 255, 0.8);
+    			position: relative;
+    		}
+    		.form-group label{
+    			margin-bottom: 8px;
+    		}
+    		.formFill{
+    			text-align: center;
+    			width: 450px!important;
+    			float: right;
+    			background-color: rgba(0, 0, 0, 0.6);
+    			padding-left: 20px;
+    			padding-right: 20px;
+    		}  	
+    		.iconContact{
+    			position: absolute;
+    			top:40px;
+    			right:18px;
+    			color: #666;
+    		}
+    		.section2{
+    		
+    			margin-bottom: 120px;
+    			margin-top: 120px;
+    		
+    		}
+    		.hotelImg{
+    			max-width: 100%;
+    			height: auto;
+    		}
+    		.subscript{
+    			font-size: 14px;
+    			font-family: "Open Sans"!important;
+    		}
+    		.article  > h1{
+    			margin: 0;
+    			margin-top:10px ;
+    			margin-bottom:10px ;
+    			font-size: 30px;	
+    		}
+    		.article > p {
+    			padding: 0;
+    			margin:0;
+    			margin-bottom: 10px;
+    			font-size: 12px;
+    		}
+    		.line{
+    			width: 100%;
+    			border-top: 1px solid #666;
+    		}
+    		.section3{
+    			margin-top: 115px;
+    			text-align: center;
+    			width: 1170px;
+    			max-width: 100%;
+    			overflow:hidden ;
+    			margin:20px auto;
+    			scroll-behavior: smooth;
+    		}
+    		.card {
+    			width: 360px;
+    			margin:0px 15px 15px 15px;
+    			padding: 0;
+    			cursor: pointer;
+    		
+    		}
+    		.subTitleCard{
+    			color: #666;
+    			font-size: 13px;
+    		}
+    		.c1{
+    			overflow: hidden;
+    			position: relative;
+    		}
+    		.cardImg{
+    			overflow: hidden;
+    		}
+    		.c1:hover{
+    			transform: scale(0.95);
+    		}
+    		.c1:hover .cardImg .card-img-top{
+    			transform: scale(1.1);
+    			transition: transform .3s ease;
+    		}
+    		.card-img-top{
+    				max-width: 100%;
+    				width: 100%;
+ 
+    		}
+    		.heading > h1{
+    			margin-bottom: 30px;
+    		}
+    		.section3 > .row{
+    			text-align: center;
+    			margin-left: 100px;
+    		} 
+    		.groupCard{
+    			display: flex;
+    			width: max-content;
+    		}
+    		.heading{
+    			text-align: center;
+    			margin-top: 100px;
+    			margin-bottom: 30px;
+    		}
+    		.buttonGroup{
+    			text-align: center;
+    			font-size: 0px;
+    		}
+    		.buttonGroup > button{
+    			border-right: none;
+    			font-size: 21px;
+    			border-radius: 5px 0px 0px 5px;
+    			color:#333333;
+    			border-color:#eaeaea ;
+    		}
+    		.next{
+    			border-right: 2px solid #eaeaea!important;
+    			border-radius: 0px 5px 5px 0px!important;
+
+    		}
+    		
+    		.thirdBackground{
+    			margin-top: 120px;
+    			height: 600px;
+    			background-image: url('./Images/Culinary Experience.jpg');
+    			background-size: cover;
+    			max-width: 100%;
+    			width: 100%;
+
+    		}
+    		.fourthBackground{
+    			margin-top: 120px;
+    			height: 600px;
+    			background-image: url('./Images/Spa like no other.jpg');
+    			background-position: center;
+    			background-size: cover;
+    			max-width: 100%;
+    			width: 100%;
+
+    		}
+    		.btnGroupSlide {
+    			text-align: left;
+    			font-size: 0px;
+    			margin-top: 15px;
+
+    			
+
+    		}
+    		.btn1{
+   				  font-size: 20px;	 
+   				  border: 2px solid #666;
+   				  width: 32px;
+   				  cursor: pointer;
+   				  background-color: rgba(0, 0, 0, 0.7);
+   				  border-radius: 5px 0px 0px 5px;
+   				  color: #eaeaea;
+
+   				
+    		}
+    		.btn2{
+   				  font-size: 20px;	 
+   				  border: 2px solid #666;
+   				  width: 32px;
+   				  cursor: pointer;
+   				  background-color: rgba(0, 0, 0, 0.7);
+   				  border-radius: 0px 5px 5px 0px;
+   				  color: #eaeaea;
+
+
+   				
+    		}
+    		.firstSlide{
+    			width: 50%;
+    			height: 600px;
+    			background-color: rgba(0, 0, 0, 0.7);
+    		}
+    		.firstContent{
+    			width: 522px;
+    			float: right;
+    			margin-right: 63px;
+    			margin-top: 40px;
+    			margin-bottom: 40px;
+    			
+    		}
+    		.titleContent > h1{
+    			font-size: 48px;
+    			color: white;
+    			padding-bottom: 20px;
+    			margin: 0;
+
+    		}
+    		.titleContent > p {
+    			font-size: 16px;
+    			color: rgba(255, 255, 255, 0.7);
+    			line-height: 1.7rem;
+    		}
+    		.titleContent{
+    			margin-top: 100px;
+    			text-align: left;
+    		}
+    		.btnBook{	
+    			margin-top: 20px;
+    			padding-left: 15px;
+    			padding-right: 15px;
+    			margin-left: auto;
+     			width: 160px;
+    			height: 39px;
+    			margin-bottom: 25px;
+    			border-radius: 10px;
+    			background-color: #c7b39a;
+    			color: white;
+    		}
+    		.btnBook:hover {
+    			background-color: #eaeaea;
+    			color: black;
+    		}
+    		.btnGroupBottom{
+    			text-align: center;
+    			align-items: center;
+    			
+
+    		}
+    		.bottomButton{
+    			background-color: #ffffff;
+    			border: 2px solid #ccc;
+    			margin-right: 10px;
+    			width: 8px;
+    			height: 8px;
+    			border-radius: 50%;
+
+    		}
+    		
+    		.groupPoster{
+    			display: flex;
+    			width: max-content;
+    			margin-left: auto;
+    			margin-right: auto;
+    			text-align: center;
+    		}
+
+    		.imgTop{
+    			max-width: 100%;
+    			width: 78px;
+    			height: 80px;
+    			margin-left: auto;
+    			margin-right: auto;
+    		}
+    		.Poster{
+    			width: 266px;
+    			padding: 29px 30px;
+
+
+    		}
+    		#pos1:hover{
+    			background-image: linear-gradient(
+       				 				rgba(0, 0, 0, 0.5), 
+       								rgba(0, 0, 0, 0.5)
+      								) ,url("Images/plane 2.jpg") ;
+    			background-position: center;
+				background-size: cover;
+			
+    		}
+    		#pos1:hover .card-title{
+    			color: white;
+    		}
+    		#pos1:hover .card-text{
+    			color: #eaeaea;
+
+    		}
+    		#pos2:hover{
+    			background-image: linear-gradient(
+       				 				rgba(0, 0, 0, 0.5), 
+       								rgba(0, 0, 0, 0.5)
+      								) ,url("Images/breakfast 2.jpg") ;
+    			background-position: center;
+				background-size: cover;
+				
+    		}
+    		#pos2:hover .card-title{
+    			color: white;
+    		}
+    		#pos2:hover .card-text{
+    			color: #eaeaea;
+    		}
+    		#pos3:hover{
+    			background-image: linear-gradient(
+       				 				rgba(0, 0, 0, 0.5), 
+       								rgba(0, 0, 0, 0.5)
+      								) ,url("Images/tour-guide 2.jpg") ;
+    			background-position: center;
+				background-size: cover;
+
+    		}
+    		#pos3:hover .card-title{
+    			color: white;
+    		}
+    		#pos3:hover .card-text{
+    			color: #eaeaea;
+    		}
+    		#pos4:hover{
+    			background-image: linear-gradient(
+       				 				rgba(0, 0, 0, 0.5), 
+       								rgba(0, 0, 0, 0.5)
+      								) ,url("Images/bbq 2.jpg") ;
+    			background-position: center;
+				background-size: cover;
+
+    		}
+    		#pos4:hover .card-title{
+    			color: white;
+    		}
+    		#pos4:hover .card-text{
+    			color: #eaeaea;
+    		}
+    		.Poster > .card-body{
+    			padding: 0px;
+    		}
+    		.Poster > .card-body > .card-title{
+    			margin-top: 20px;
+    			margin-bottom: 10px;
+    		}
+    		.section5{
+    			background-image:url('./Images/Slider 1.jpg') ;
+    			background-size: cover;
+    			background-attachment: fixed;
+    			background-repeat: no-repeat;
+    			max-width: 100%;
+    			width: 100%;
+    			height: 600px;
+    			overflow-x: hidden;
+    		}
+    		.intro{
+    			text-align: center;
+    			color: white;
+    			top:160px;
+    			position: relative;
+    		}
+    		.intro > p {
+    			margin-top: 30px;
+    			margin-bottom: 10px;
+    		}
+    		.intro > h1{
+    			margin: 0;
+    		}
+    		.fa-youtube{
+    			font-size: 60px;
+    			color: white;
+
+    		}
+    		.card-text{
+    			font-weight: 300;
+    		}
+    		.avatar{
+    			padding: 30px;
+    			width: 370px;
+    		}
+    		.avatar .card-text{
+    			font-weight: 300px;
+    		}
+    		.avatar .card-body{
+    			padding: 0		;
+    		}
+    		.avatar .card-title{
+    			margin-top: 10px;
+    			margin-bottom: 5px;
+    		}
+    		.imgBot{
+    			max-width: 100%;
+    			height: 24px;
+    			width: 154px;
+    			margin-left: auto;
+    			margin-right: auto;
+    			margin-top: 25px;
+    		}
+    		.imgAva{
+    			border-radius: 50%;
+    		}
+    		.lastTopImg{
+    			max-width:100%;
+    			width: 100%;
+    			height: auto;
+    		}
+    		.lastImg{
+    			max-width: 100%;
+    			width: 100%;
+    			height: auto;
+    		}
+    		.link {
+    			text-decoration: none;
+    			color: black;
+    		}
+    		.link:hover{
+    			color: #eaeaea;
+    		}
+    		.lastCard{
+    			text-align: left;
+    		}
+    		.lastCard .card-text{
+    			font-size: 14px;
+    		}
+    		.link1{
+    			text-decoration: none;
+    			color: #c7395b;
+    			font-size: 13px;
+    		}
+    		.link1:hover{
+    			color:#eaeaea ;
+    		}
+    		.moreInf{
+    			text-decoration: none;
+    			color: #666;
+    			font-size: 12px;
+    			margin-top: 30px;
+    			display: inline-block;
+    			text-transform: uppercase;
+    		}
+    		.moreInf:hover{
+    			color: #999;
+    		}
+    		.readIcon{
+    			padding-left: 9px;
+    			font-size: 10px;
+    		}
+    		.moreArt{
+    			display: inline-block;
+    			text-transform: uppercase;
+    			text-decoration: none;
+    			color: #c7b39a;
+    			padding: 15px 17px 9px 17px;
+    			border-bottom: 2px solid #c7b39a;;
+    			font-size: 12px;
+    		}
+    		.totalArt{
+    			text-align: center;
+    		}
+    		.footerMain{
+    			margin-top: 120px;
+    			
+   		
+    			text-align: left;
+    			padding: 45px 0px 45px 0px;
+    			background-color: #111111;
+
+    		}
+
+    		.moreArt:hover{
+    			color: #eaeaea;
+    			border-bottom-color: #eaeaea;
+    		}
+    		.logoFooter{
+    			width: 270px;
+    			height: 27px;
+    			margin: 15px 0px 15px 0px;
+    		}
+    		.logoFooter > img{
+    			max-width: 100%;
+    			width: 86px;
+    		}
+    		.scriptFooter{
+    			padding: 15px 0px 15px 0px;
+			    color: rgba(255, 255, 255, 0.6);
+				font-size: 13px;
+				font-weight: 300;
+
+    		}
+    		.footerMenu{
+    			list-style-type: none;
+    			padding: 0;
+    		}
+    		.footerMenu li:first-child{
+    			text-decoration: none;
+    			color: rgba(255, 255, 255, 0.6);
+    			font-size: 13px;
+    			font-weight: 300;
+    		}
+    		.footerMenu a{
+    			text-decoration: none;
+    			color: rgba(255, 255, 255, 0.6);
+    			font-size: 13px;
+    			font-weight: 300;
+    		}
+    		.itemFooter{
+    			margin-top: 12px;
+    		}
+    		 h3{
+    			margin-bottom: 25px;
+    			font-size: 12px;
+    			text-transform: uppercase;
+    			color: rgba(255, 255, 255, 0.9);
+    		}
+    		.footerMenu i{
+    			margin-right: 20px;
+    			color:rgba(255, 255, 255, 0.6);
+    		}
+    		.btnFooter{
+    			margin-top: 20px;
+    			padding-left: 15px;
+    			padding-right: 15px;
+    			margin-left: auto;
+     			width: 272px;
+    			height: 39px;
+    			margin-bottom: 25px;
+    			background-color: #c7b39a;
+    			color: white;
+    			text-transform: uppercase;
+
+    		}
+    		.formGroupFooter label {
+    			display: none;
+    			max-width: 100%;
+    			width: 270px!important;
+
+    		}
+    		.formGroupFooter{
+    			width: 100%;
+    			max-width: 100%;
+    			position: relative;
+
+    		}
+    		.formFooterOut{
+    			padding: 0;
+    			width: 270px;
+    		}
+    		.emailInput{
+    			border-radius: 0;
+    			width: 100%;
+    		}
+    		.iconEmail{
+    			position: absolute;
+    			top:12px;
+    			right: 10px;
+
+    		}
+    		.copyright{
+    			padding: 15px 17px;
+    			width: 100%;
+    			line-height: 24px;
+    			background-color: #333333;
+    		}
+    		.copyright .container{
+    			line-height: 24px;
+    			text-align: center;
+    			height: 24px;
+    		}
+    		.copyright .container p{
+    			color: rgba(255, 255, 255, 0.2);
+    			font-size: 12px;
+    		}
+    		#carouselExampleControls{
+    			overflow-x:hidden;
+    		}
+    		#carouselExampleIndicators1{
+    			overflow-x: hidden;
+    		}
+    		*{
+    			margin:0;
+    			padding: 0;
+
+    		}
+    		@media screen and (max-width:720px){
+    			.top-inf{
+    				text-align: right;
+    			}
+    			.contactIcon{
+    				text-align: center;
+    			}
+    			.form{
+ 				text-align: center;
+    			position: static;
+    			margin-top: 20px;
+
+
+	    		}	
+	    		form{
+	    			margin-right: 100px;
+	    			background-color: white;
+	    			border:1px solid #eaeaea;
+	    		}
+	    		.c1{
+	    			width: calc(100vw - 30px);
+
+	    		}
+	    		.section3{
+	    			padding: 0;
+	    		}
+	    		.firstSlide{
+	    			width: 100%;
+	    		}
+	    		.Poster{
+	    			width: 240px;
+	    			height: 280px;
+	    			margin-bottom: 10px;
+	    		}
+	    		
+	    		.avatar{
+	    			width:500px;
+	    			margin-left: auto;
+	    			margin-right: auto;
+	    		}
+	    		.avatarRow{
+	    			padding: 0!important;
+	    		}
+	    		.lastCard{
+	    			width:500px;
+	    			margin-left: auto;
+	    			margin-right: auto;
+	    		}
+	    		.formFooterOut{
+	    			width: 80vw;
+	    		}
+	    		.formGroupFooter{
+	    			width: 80vw;
+	    		}
+	    		.btnFooter{
+	    			width: 80vw;
+	    		}
+	    		
+	    		.navMobButt{
+	    			width: 30px;
+	    			margin-top: 15px;
+	    			background-color: #C5B39C;
+	    			color: white;
+	    			border-radius: 2px;
+	    			margin-left: auto;
+	    			margin-right: auto;
+	    		}
+	    		.menuMob{
+	    			position: relative;
+	    			width: 100%;
+	    			height: 60px;
+	    			text-align: center;
+	    			
+
+
+	    		}
+	    		.menuDetail{
+	    			position: absolute;
+	    			top:60px;
+	    			z-index: 100;
+	    		}
+	    		.menuDetail {
+	    			background-color: white;
+					list-style-type: none;
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+					margin-bottom: 0px;
+					padding-left: 0px;
+					text-align: center;
+					line-height:60px ;
+				}
+
+			.menuDetail > li {
+					display: block;
+					position: relative;
+					padding-right: 5px;
+					padding-left:5px;
+					
+				}
+			.menuDetail > li:first-child  > a{
+				color: black;
+			}
+			.menuDetail  > li  > a{
+/*					display: block;*/
+					padding: 15px 8px;
+					text-decoration: none;
+					color: #666;
+					
+
+				}
+	
+			.menuDetail  > li:hover > a{
+				
+				color: black;
+			}
+
+
+			.menuDetail > .Home{
+					display: block;
+					padding-right: 5px;
+					padding-left:5px;
+			}
+			.menuDetail .Home .subHome{
+	 			padding: 0px;
+	 			list-style-type: none;
+	 			display: block;
+	 			border: 1px solid #eaeaea;
+	 			box-shadow: 0 1px 4px 0 rgba(225, 225, 225, 0.6);
+	 			padding: 9px 0px;
+	 			background-color: white;
+
+			}
+
+			.subHome > li:hover >a{
+	 			background-color: #C7B39A;
+	 			color: #FFF;
+	 		}
+	 		.subHome > li{
+	 			line-height: 20px; 
+	 			padding: 10px;
+	 		}
+	 		.subHome > li > a{
+	 			text-decoration: none;
+	 			color: #666;
+	 			text-align: left;
+	 			padding : 6px 18px;
+	 			border:none;
+	 			cursor: pointer;
+	 		}
+			.menuDetail > .Element{
+					display: block;
+					padding-right: 5px;
+					padding-left:5px;
+
+			}
+			.bigMenuElement{
+	 			width:100%;
+	 			padding: 0;
+	 			text-align: center;
+	 			display: block;
+	 			background-color: white;
+
+	 		}
+
+			.bigMenuElement > li{
+	 			display: inline-block;
+	 			border-right: 1px solid  #eaeaea;
+	 			width:150px;
+	 			padding: 24px 0px;
+
+	 		}
+
+	 		.bigMenuElement > li > ul{
+	 				
+	 				list-style-type: none;
+	 				padding-left: 0px;
+	 		}
+	 		.bigMenuElement > li:last-child{
+	 			border-right: none;
+	 			float: right;
+
+
+	 		}
+	 		
+	 		.bigMenuElement > li > ul > li{
+	 			padding: 6px 18px;
+	 			text-align: left;
+	 			line-height: 20px;
+
+	 		}
+	 		.titleSubMob > h1{
+	 			text-align: left;
+	 			font-size: 10px;
+	 			padding-left: 18px;
+	 			
+	 		}
+	 		.bigMenuElement > li > ul > li > a{
+	 			text-decoration: none;
+	 			color: #666;
+	 			font-size: 8px;
+	 		}
+	 		.bigMenuElement > li > ul > li:hover{
+	 			background-color: #c7b39a;
+	 		
+	 		}
+	 		.bigMenuElement > li > ul > li:hover a{
+	 		
+	 			color: white;
+	 		}
+	 		.Blog{
+	 			width: 300px!important;
+	 			height: 200px;
+	 		}
+	 		.fa-angle-down{
+	 			float: right;
+	 			
+	 			margin-top: 20px;
+	 		}
+
+	    	}
+    		body{
+    			font-family: "Old Standard TT", "Open Sans";
+    		}
+    		.avatarRow{
+    			padding-left: 90px;
+
+    		}
+    		.buttonTop{
+    			width: 50px;
+    			height: 50px;
+    			border: 1px solid black;
+    			border-radius: 50%;
+    			background-color: yellow;
+    			position: fixed;
+    			bottom:10px;
+    			right: 10px;
+    			z-index: 98;
+    			cursor: pointer;
+    			color: black;
+    			font-size: 20px;
+    		}
+
+	    	
+		</style>
+		<title>Lux Hotel</title>
+	</head>
+	<body>
+		<header>
+				<div class="top-nav">
+					<div class="container">
+						<div class="row">
+									<div class="col-md-2 col-6 top-inf">
+										<a href="#"><i class="fa-solid fa-phone icon"></i>1 877 834 245</a>
+									</div>
+									<div class="col-md-5 col-6 top-inf-2">
+										<p><i class="fa-solid fa-location-dot icon"></i> Amelia Island, Panama</p>
+									</div>
+							
+							<div class="col-md-5">
+									<div class="col-md-3 contactIcon">
+										<a href="#"><i class="fa-brands fa-facebook"></i></a>
+										<a href="#"><i class="fa-solid fa-basketball"></i>
+										<a href=""><i class="fa-brands fa-google-plus-g iconGoogle"></i></a>
+									</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="logoSection">
+					<div class="container logoCon">
+							<a href=""><img class ="logo"src="./images/logo.png" alt="logo" loading="lazy"></a>
+					</div>
+				</div>
+				<nav>
+				 
+				 			<div class="menuMob d-md-none d-block">
+					 			<button id="navMobButt" class="navMobButt"type="button" class="btn btn-primary">
+					 				<i class="fa-solid fa-bars"></i>
+					 			</button>
+					 			<ul class="menuDetail">
+					 				<li class="Home">
+					 					<a href="">Home</a><i id ="Home" class="fa-solid fa-angle-down"></i>
+					 					<ul class="subHome" id="subHome">
+					 						<li><a href="">Home 1</a></li>
+					 						<li><a href="">Home 2</a></li>
+					 						<li><a href="">Home 3</a></li>
+					 						<li><a href="">Home 4</a></li>
+					 						<li><a href="">Home 5</a></li>
+					 						<li><a href="">Home 6</a></li>
+					 					</ul>
+					 				</li>
+					 				<li class="Home">
+					 					<a href="">Rooms</a><i id ="Room" class="fa-solid fa-angle-down"></i>
+					 					<ul class="subHome" id ="subRoom">
+					 						<li><a href="">Room Booking List</a></li>
+					 						<li><a href="">Room Cards</a></li>
+					 						<li><a href="">Room Carousel</a></li>
+					 						<li><a href="">Room Single</a></li>
+					 						
+					 					</ul>
+					 				</li>
+					 				<li class="Element">
+					 					<a href="">Elements</a><i id ="Element" class="fa-solid fa-angle-down"></i>
+					 					<ul class="bigMenuElement" id ="bigElement">
+					 						<li>
+					 							<div class="titleSubMob">
+					 								<h1>Shortcode Set 1</h1>
+					 							</div>
+					 							<ul>
+					 								<li><a href="">Accordion</a></li>
+					 								<li><a href="">Amenities</a></li>
+					 								<li><a href="">Button</a></li>
+					 								<li><a href="">Blog List</a></li>
+					 								<li><a href="">Typography</a></li>
+					 								<li><a href="">Tabs</a></li>
+					 								<li><a href="">Check List</a></li>
+					 							</ul>
+					 						</li>
+
+					 						<li><div class="titleSubMob">
+					 								<h1>Shortcode Set 2</h1>
+					 							</div>
+					 							<ul>
+					 								<li><a href="">Columns</a></li>
+					 								<li><a href="">Countdown</a></li>
+					 								<li><a href="">Counter</a></li>
+					 								<li><a href="">Gallery</a></li>
+					 								<li><a href="">Room Carousel</a></li>
+					 								<li><a href="">Special Text</a></li>
+					 								<li><a href="">Testimonial</a></li>
+					 							</ul>
+					 						</li>
+
+					 						<li><div  class="titleSubMob">
+					 								<h1>Shortcode Set 3</h1>
+					 							</div>
+					 							<ul >
+					 								<li><a href="">Featured Amenities Banner</a></li>
+					 								<li><a href="">Featured Content Slider</a></li>
+					 								<li><a href="">Text with Button</a></li>
+					 								<li><a href="">Contact Form</a></li>
+					 								<li><a href="">Room Cards</a></li>
+					 								<li><a href="">Google Map</a></li>
+					 								<li><a href="">Icon Box</a></li>
+					 							</ul>
+					 						</li>
+
+					 						<li><div  class="titleSubMob">
+					 								<h1>Shortcode Set 4</h1>
+					 							</div>
+					 							<ul>
+					 								<li><a href="">Text with Signature</a></li>
+					 								<li><a href="">Pricing Table</a></li>
+					 								<li><a href="">Image Bloc</a></li>
+					 								<li><a href="">Video</a></li>
+					 								<li><a href="">Instagram</a></li>
+					 							</ul>
+					 						</li>
+					 					</ul>
+					 				</li>
+					 				<li class="Home">
+					 					<a href="">Pages</a><i id ="Page" class="fa-solid fa-angle-down"></i>
+					 					<ul class="subHome" id ="subPage">
+					 						<li><a href="">About V1</a></li>
+					 						<li><a href="">About V2</a></li>
+					 						<li><a href="">Dining V1</a></li>
+					 						<li><a href="">Dining V2</a></li>
+					 						<li><a href="">Spa V1</a></li>
+					 						<li><a href="">Spa V2</a></li>
+					 						<li><a href="">Terms & Conditions</a></li>
+					 						
+					 					</ul>
+					 				</li>
+					 				<li class="Element">
+					 					<a href="">Blog</a><i id ="Blog" class="fa-solid fa-angle-down"></i>
+					 					<ul class="bigMenuElement" id="bigBlog">
+					 						<li class="Blog">
+					 							<div class="title">
+					 								<h1>List Layouts</h1>
+					 							</div>
+					 							<ul>
+					 								<li><a href="">Right Sidebar</a></li>
+					 								<li><a href="">Left Sidebar</a></li>
+					 								<li><a href="">No Sidebar</a></li>
+					 							</ul>
+					 						</li>
+
+					 						<li class="Blog">
+					 							<div class="title">
+					 								<h1>Single Post Layouts</h1>
+					 							</div>
+					 							<ul>
+
+					 								<li><a href="">Right Sidebar</a></li>
+					 								<li><a href="">Left Sidebar</a></li>
+					 								<li><a href="">No Sidebar</a></li>
+					 							</ul>
+					 						</li>
+					 					</ul>	
+					 				</li>
+
+					 				<li><a href="">Contact</a></li>
+					 			</ul>
+				 		</div>
+
+
+
+				 			
+				 			<ul class="menu d-none d-md-block">
+				 				<li>
+				 					<a href="">Home</a>
+				 					<ul class="subMenu">
+				 						<li><a href="">Home 1</a></li>
+				 						<li><a href="">Home 2</a></li>
+				 						<li><a href="">Home 3</a></li>
+				 						<li><a href="">Home 4</a></li>
+				 						<li><a href="">Home 5</a></li>
+				 						<li><a href="">Home 6</a></li>
+				 					</ul>
+				 				</li>
+				 				<li>
+				 					<a href="">Rooms</a>
+				 					<ul class="subMenu">
+				 						<li><a href="">Room Booking List</a></li>
+				 						<li><a href="">Room Cards</a></li>
+				 						<li><a href="">Room Carousel</a></li>
+				 						<li><a href="">Room Single</a></li>
+				 						
+				 					</ul>
+				 				</li>
+				 				<li>
+				 					<a href="">Elements</a>
+				 					<ul class="bigMenu">
+				 						<li>
+				 							<div class="title">
+				 								<h1>Shortcode Set 1</h1>
+				 							</div>
+				 							<ul>
+				 								<li><a href="">Accordion</a></li>
+				 								<li><a href="">Amenities</a></li>
+				 								<li><a href="">Button</a></li>
+				 								<li><a href="">Blog List</a></li>
+				 								<li><a href="">Typography</a></li>
+				 								<li><a href="">Tabs</a></li>
+				 								<li><a href="">Check List</a></li>
+				 							</ul>
+				 						</li>
+
+				 						<li><div class="title">
+				 								<h1>Shortcode Set 2</h1>
+				 							</div>
+				 							<ul>
+				 								<li><a href="">Columns</a></li>
+				 								<li><a href="">Countdown</a></li>
+				 								<li><a href="">Counter</a></li>
+				 								<li><a href="">Gallery</a></li>
+				 								<li><a href="">Room Carousel</a></li>
+				 								<li><a href="">Special Text</a></li>
+				 								<li><a href="">Testimonial</a></li>
+				 							</ul>
+				 						</li>
+
+				 						<li><div  class="title">
+				 								<h1>Shortcode Set 3</h1>
+				 							</div>
+				 							<ul >
+				 								<li><a href="">Featured Amenities Banner</a></li>
+				 								<li><a href="">Featured Content Slider</a></li>
+				 								<li><a href="">Text with Button</a></li>
+				 								<li><a href="">Contact Form</a></li>
+				 								<li><a href="">Room Cards</a></li>
+				 								<li><a href="">Google Map</a></li>
+				 								<li><a href="">Icon Box</a></li>
+				 							</ul>
+				 						</li>
+
+				 						<li><div  class="title">
+				 								<h1>Shortcode Set 4</h1>
+				 							</div>
+				 							<ul>
+				 								<li><a href="">Text with Signature</a></li>
+				 								<li><a href="">Pricing Table</a></li>
+				 								<li><a href="">Image Bloc</a></li>
+				 								<li><a href="">Video</a></li>
+				 								<li><a href="">Instagram</a></li>
+				 							</ul>
+				 						</li>
+				 					</ul>
+				 				</li>
+				 				<li>
+				 					<a href="">Pages</a>
+				 					<ul class="subMenu">
+				 						<li><a href="">About V1</a></li>
+				 						<li><a href="">About V2</a></li>
+				 						<li><a href="">Dining V1</a></li>
+				 						<li><a href="">Dining V2</a></li>
+				 						<li><a href="">Spa V1</a></li>
+				 						<li><a href="">Spa V2</a></li>
+				 						<li><a href="">Terms & Conditions</a></li>
+				 						
+				 					</ul>
+				 				</li>
+				 				<li>
+				 					<a href="">Blog</a>
+				 					<ul class="bigMenu">
+				 						<li class="Blog">
+				 							<div class="title">
+				 								<h1>List Layouts</h1>
+				 							</div>
+				 							<ul>
+				 								<li><a href="">Right Sidebar</a></li>
+				 								<li><a href="">Left Sidebar</a></li>
+				 								<li><a href="">No Sidebar</a></li>
+				 							</ul>
+				 						</li>
+
+				 						<li class="Blog">
+				 							<div class="title">
+				 								<h1>Single Post Layouts</h1>
+				 							</div>
+				 							<ul>
+
+				 								<li><a href="">Right Sidebar</a></li>
+				 								<li><a href="">Left Sidebar</a></li>
+				 								<li><a href="">No Sidebar</a></li>
+				 							</ul>
+				 						</li>
+				 					</ul>	
+				 				</li>
+
+				 				<li><a href="">Contact</a></li>
+				 			</ul>
+				 		</div>
+				</nav>
+		</header>
+		<main>
+			<section class="section1">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active firstBackground">
+					    	<div class="caroulTitle">
+					  			<div class="container content">
+							  		<h1>Luxury Times.
+							  		<br>
+							  		Bays & Beyond.
+							  		</h1>
+							  		<h5 class="subTitle">
+							  			The finest hotel near Panama Beach
+							  		</h5>
+						  		</div>	
+					  		</div>
+					    </div>
+					    <div class="carousel-item secondBackground">
+					    	<div class="caroulTitle">
+					  			<div class="container content">
+							  		<h1>Comfort & More.
+							  		<br>
+							  		Bays & Beyond.
+							  		</h1>
+							  		<h5 class="subTitle">
+							  			The finest hotel near Panama Beach
+							  		</h5>
+						  		</div>	
+					  		</div>
+					    </div>
+					  </div>
+					   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+					  </button>
+					  	<div class="form">
+					  			<form class="formFill">
+					  				    <div class="form-row row">
+						  				  	<div class="form-group col-md-6 col-6">
+	      										<label  for="inputArr">Arrival Date</label>
+	      										<input  type="text" class="form-control" id="inputArr" placeholder="Arrival Date" name="arrDate">
+	      										<i class="fa-regular fa-calendar iconContact"></i>
+	    									</div>
+	    									<div class="form-group col-md-6 col-6">
+	      										<label for="inputDep">Departure Date</label>
+	      										<input type="text" class="form-control" id="inputDep" placeholder="Departure Date" name="depDate">
+	      										<i class="fa-regular fa-calendar iconContact"></i>
+	    									</div>
+	    								</div>	
+
+	    								 <div class="form-row row">
+						  				  	<div class="form-group col-md-6 col-6">
+	      										<label for="inputAdult">Adult</label>
+		      									<select class="form-select" id="inputAdult" name="adult">
+												    <option value="1">Adult</option>
+												    <option value="2">2</option>
+												    <option value="3">4</option>
+												</select>
+	    									</div>
+	    									<div class="form-group col-md-6 col-6">
+	      										<label for="inputChildren">Children</label>
+	      										<select class="form-select" id="inputChildren" name="children">
+												    <option value="1">Children</option>
+												    <option value="2">1</option>
+												    <option value="3">2</option>
+												    <option value="4">3</option>
+												</select>
+	    									</div>
+	    								</div>	
+		    							<button type="button" class="btnContact" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  									CHECK AVAILABILITY
+										</button>
+
+					  			</form>
+					  	</div>
+					  	
+					</div>
+			</section>
+			<section>
+					<div class="container section2">
+						<div class="row">
+							<div class="col-md-4 article">
+								<p>Amelia Island, Panama</p>
+								<h1>
+									Panama's Finest Hotel.
+									<br>
+									Make Your Golden
+									<br>
+									Memories.
+								</h1>
+							</div>
+							<div class="col-md-4">
+								<img class="hotelImg" src="./images/Panama's Finist Hotel.jpg" alt="hotel" loading="lazy">
+							</div>
+							<div class="col-md-4 subscript">
+								<p>Make memories at Hotel Luxe, Amelia Island, where southern charm, magnificent scenery and casually elegant surroundings exemplify the gentle ambience of this barrier island’s luxury beachfront resort.</p>
+								<p>Hotel Luxe is the perfect place to feed your spirit. With recently renovated rooms and a bolder focus on cuisine culture &amp; more.</p>
+							</div>
+						</div>
+					</div>
+			</section>
+			<div class="line">
+			</div>		
+			<section>
+				<div class="heading">
+						<p>ACCOMODATION &amp; COMFORT</p>
+						<h1>Eco-Inspired Lodging</h1>
+				</div>
+				<div class="container section3">
+					<div class="groupCard">
+						<div class="card c1 ">
+								 <div class="cardImg">
+								  		<img src="./images/Room - Beach Villa.jpg" class="card-img-top" alt="...">
+								 </div> 		
+								  <div class="card-body">
+									    <h5 class="card-title">Standard Room</h5>
+									    <p class="card-text">Starting from $60.0/night</p>
+								 </div>
+						</div>
+						<div class="card c1 ">
+							 <div class="cardImg">
+							  		<img src="./images/Room - Beach Villa.jpg" class="card-img-top" alt="...">
+							 </div> 		
+							  <div class="card-body">
+								    <h5 class="card-title">Beach Villa</h5>
+								    <p class="card-text">Starting from $90.0/night</p>
+							 </div>
+						</div>
+						<div class="card c1">
+							<div class="cardImg">
+							  	<img src="./images/Room - Exclusive Suite.jpg" class="card-img-top" alt="...">
+							</div> 
+							  <div class="card-body">
+							    <h5 class="card-title">Exclusive Suite</h5>
+							    <p class="card-text">Starting from $120.0/night</p>
+							    
+							  </div>
+						</div>
+
+						<div class="card c1">
+							  <img src="./images/Room - Luxury Suite.jpg" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <h5 class="card-title">Luxury Suite</h5>
+							    <p class="card-text">Starting from $160.0/night</p>
+							    
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="buttonGroup">
+					<button type="button" id="prev"><</button>
+					<button class="next" type="button" id="next">></button>
+				</div>
+			</section>
+			<section>
+					<div class="cotainer section4">
+						<div id="carouselExampleIndicators1" class="carousel slide">
+							 
+							  <div class="carousel-inner">
+								    <div class="carousel-item active thirdBackground ">
+								    	<div class="firstSlide col-12">
+								    		<div class="firstContent ">
+								    			<div class="titleContent">			
+								    				<h1>Culinary Experience</h1>
+								    				<p>Whether you choose an intimate, inspired dinner at Junction or traditional pub fare at The Tavern, your taste buds will rejoice at how inventive and fresh our food is—many of our ingredients are grown on-site in our organic garden.</p>
+								    			</div>
+								    			<button type="button" class="btnBook" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  											Book Now
+												</button>
+										    	 <div class="btnGroupSlide">
+													  <button class="btn1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+													  	<i class="fa fa-angle-left"></i>
+													  </button>
+													  <button class="btn2" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+													  	<i class="fa fa-angle-right"></i>
+													  </button>
+										  		</div>
+										  	</div>	
+										</div>  		
+								    	</div>
+								    <div class="carousel-item fourthBackground">
+								    	<div class="firstSlide col-12">
+										    	 <div class="firstContent">
+								    			<div class="titleContent">			
+								    				<h1>Spa Like No Other</h1>
+								    				<p>Seven pillars of well-being and indigenous ingredients are the foundation of the spa experience at this resort. Tropical papaya, aloe vera, volcanic stones and other locally developed ingredients are combined.</p>
+								    			</div>
+								    			<button type="button" class="btnBook" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  											Book Now
+												</button>
+										    	 <div class="btnGroupSlide">
+													  <button class="btn1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+													  	<i class="fa fa-angle-left"></i>
+													  </button>
+													  <button class="btn2" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+													  	<i class="fa fa-angle-right"></i>
+													  </button>
+										  		</div>
+										  	</div>
+								  		</div>
+								    </div>
+							  </div>
+							 
+						
+							  <div class="btnGroupBottom ">
+										  <button class="bottomButton" type="button" id="preButton"  data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+										  		
+										  </button>
+										  <button class="bottomButton" type="button" id="nextButton"data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+										  		
+										  </button>
+							 </div>	  
+					 	  
+						</div>
+						
+					</div>
+					
+			</section>
+			<section>
+				<div class="container">
+						<div class="row">
+							<div class="heading">
+								<p>ACCOMODATION &amp; COMFORT</p>
+								<h1>Eco-Inspired Lodging</h1>
+							</div>
+								<div class="col-md-3 col-6">
+									<div class="card Poster" id="pos1">
+										  <img src="./images/plane.png"  class="imgTop" alt="...">
+										  <div class="card-body">
+										    <h5 class="card-title">Airport Pickup</h5>
+										    <p class="card-text">We’ll pick up from airport while you comfy on your ride.</p>
+										  </div>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+										<div class="card Poster" id="pos2">
+										  <img src="./images/breakfast.png" class="imgTop"  alt="...">
+										  <div class="card-body">
+											    <h5 class="card-title">Complementary Breakfast</h5>
+											    <p class="card-text">Don’t spend a dime on breakfast. It’s on us, totally.</p>
+										 </div>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<div class="card Poster" id="pos3">
+										  <img src="./images/tour-guide.png" class="imgTop" alt="...">
+										  <div class="card-body">
+										    <h5 class="card-title">City Tour Guide</h5>
+										    <p class="card-text">Explore city with our in-house tour guide. We got your back.</p>
+										    
+										  </div>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<div class="card Poster" id="pos4">
+										  <img src="./images/bbq.png"  class="imgTop" alt="...">
+										  <div class="card-body">
+										    <h5 class="card-title">Beach BBQ Party</h5>
+										    <p class="card-text">Kick back on the beach & cook up recipes from our masterchef.</p>
+										    
+										  </div>
+									</div>
+								</div>
+									
+								
+									
+
+						
+						</div>
+					</div>
+			</section>
+			<section>
+				<div class="container section5">
+					<div class="container">
+						<div class="intro">
+							<a href=""><i class="fa-brands fa-youtube"></i></a>
+							<p>Explore. Wander. Disapper</p>
+							<h1>The Great Escape
+								<br>
+								You'll Remember.
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="heading">
+							<p>People Love Our Hotel</p>
+							<h1>What Others Say</h1>
+							</div>
+
+				<div class="container avatarRow">
+					<div class="row ">
+							<div class="card avatar col-md-4">
+								  <img src="./images/mike-fleetwood.jpg"  class="imgTop imgAva" alt="...">
+								  <div class="card-body">
+								    <h5 class="card-title">Mike Fleetwood</h5>
+								    <p class="card-text">“This was the perfect hotel with the perfect location, perfect room; I couldn’t think of a more perfect trip!This was a great location as I was going to a conference at the Javitz center and it’s nearly a couple blocks walk.”</p>
+								  </div>
+								    <img src="./images/tripadvisor.png"  class="imgBot" alt="...">
+							</div>
+							<div class="card avatar col-md-4">
+								  <img src="./images/joanna-roberts.jpg" class="imgTop imgAva"  alt="...">
+								  <div class="card-body">
+									    <h5 class="card-title">Joanna Roberts</h5>
+									    <p class="card-text">“We had an AMAZING experience at this hotel! Upon arrival, we each received a complimentary flute of champagne. Each member of the staff was incredibly friendly, welcoming, and acted as if we were the only guests at the hotel.”</p>
+								 </div>
+								  <img src="./images/tripadvisor.png"  class="imgBot " alt="...">
+							</div>
+							<div class="card avatar col-md-4">
+								  <img src="./images/alex-johnson.jpg" class="imgTop imgAva" alt="...">
+								  <div class="card-body">
+								    <h5 class="card-title">Alex Johnson</h5>
+								    <p class="card-text">“This is truly a great hotel. The staff is very friendly, helpful and experienced. I had a beautiful room with ‘city view’. That meant that I could view the Empire State Building and One World Trade Center at the same time.”</p>
+								  </div>
+								  <img src="./images/tripadvisor.png"  class="imgBot" alt="...">
+							</div>
+							
+			</div>
+			</section>
+
+			<section>
+
+				<div class="heading">
+									<p>Wha’ts Up</p>
+									<h1>Articles and News</h1>
+				</div>
+				<div class="container avatarRow">
+					<div class="row">
+								<div class="card lastCard col-md-4">
+									  <img src="./images/va0ymkiftpa-368x268.jpg"  class="lastImg" alt="...">
+									  <div class="card-body ">
+									  	<a href="" class="link">
+									    	<h5 class="card-title">Staying in Style Forever
+									    	</h5>
+									    </a>
+									  	<p class="subTitleCard">Bob William on <a class="link1" href="">Lifestyle</a></p>
+									    <p class="card-text">While there’s nothing better than relaxing in a lounge chair on the beach, some days …</p>
+									    <a href="" class="moreInf">Read more<span><i class="fa-solid fa-chevron-right readIcon "></i></span></a>
+									  </div>
+									   
+								</div>
+								<div class="card lastCard col-md-4">
+									  <img src="./images/iStock_000002993908_Medium-1-1-368x268.jpg" class="lastImg"  alt="...">
+									  <div class="card-body">
+									  		<a href="" class="link">
+										    	<h5 class="card-title">Electric Feel And Of Other Things
+										    	</h5>
+									    	</a>
+									  		<p class="subTitleCard">Bob William on <span><a class="link1" href="">Lifestyle</a></span></p>
+										   
+										    <p class="card-text">While there’s nothing better than relaxing in a lounge chair on the beach, some days …</p>
+										    <a href="" class="moreInf">Read more<span><i class="fa-solid fa-chevron-right readIcon"></i></span></a>
+									 </div>
+									
+								</div>
+								<div class="card lastCard col-md-4">
+									  <img src="./images/ihwo0unctps-368x268.jpg" class="lastImg" alt="...">
+									  <div class="card-body">
+									  	<a href="" class="link">
+										    	<h5 class="card-title">Why Hotel Comfort is Important
+										    	</h5>
+									    	</a>
+									  	<p class="subTitleCard">Bob William on <span><a href="" class="link1">Lifestyle</a></span></p>
+									    <p class="card-text">While there’s nothing better than relaxing in a lounge chair on the beach, some days …</p>
+									    <a href="" class="moreInf">Read more<span><i class="fa-solid fa-chevron-right readIcon"></i></span></a>
+									  </div>
+									  
+								</div>
+							<div class="totalArt">
+								<a href="" class="moreArt">view more articles</a>
+							</div>
+					</div>		
+				</div>
+			</section>
+		</main>
+		<footer >
+			<div class="footerMain">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="logoFooter">
+								<img src="./Images/logo.png" alt="logoFooter" loading="lazy">
+							</div>
+							<div class="scriptFooter">
+								<p>Hotel Luxe is an all-in-one WordPress theme to make hotel websites of any kind. Make the hotel website you’ve always dreamt of with Hotel Luxe.</p>
+							</div>
+						</div>
+						<div class="col-md-3 contactMenu">
+							<h3>Contac Us</h3>
+							<ul class="footerMenu">
+								<li><i class="fa-solid fa-location-dot"></i>221 B, Banker Street, London</li>
+								<li class="itemFooter"><i class="fa-solid fa-phone"></i><a href="">+01-7458292</a></li>
+								<li class="itemFooter"><i class="fa-solid fa-envelope"></i><a href="">exmaple@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 contactMenu">
+							<h3>QUICK LINKS</h3>
+							<ul class="footerMenu">
+								<li><a href="">Home</a></li>
+								<li class="itemFooter"><a href="">Terms & Conditions </a></li>
+								<li class="itemFooter"><a href="">FAQ</a></li>
+								<li class="itemFooter"><a href="">Newsletter</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3" class="notification">
+							<h3>DON’T MISS ANY UPDATES</h3>
+							<form class="formFooterOut">
+								<div class="formGroupFooter">
+	      										<label  for="inputEmail">Email</label>
+	      										<input  type="email" class="form-control emailInput" id="inputEmail" placeholder="Your email" name="email">
+	      										<i class="fa-regular fa-envelope iconEmail"></i>
+	      										
+	    						</div>
+							</form>
+							<button type="button" class="btnFooter" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  							Sign up now				
+							</button>
+
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>© Built with pride and caffeine by ThemeBubble. All rights reserved.</p>
+							</div>
+						</div>
+					</div>
+			</div>
+			<button onclick="Top()" id="topBtn" title="Go to top" class="buttonTop"><i class="fa-solid fa-angle-up"></i></button>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			
+			$("#prev").on('click', function(){
+				let w = $('.card').width();
+				$(".section3").scrollLeft(-w);
+			})
+			$("#next").on('click', function(){
+				let w = $('.card').width();
+				let mainW = $(".section3").width();
+				$(".section3").scrollLeft(+w+100);
+			})
+			$("#preButton").css("background-color","white");
+			$("#preButton").css("border","2px solid #ccc");
+			$("#nextButton").css("background-color","#ccc");
+			$("#nextButton").css("border","none");
+			$("#preButton").on('click',function(){
+				$("#preButton").css("background-color","white");
+				$("#preButton").css("border","2px solid #ccc");
+				$("#nextButton").css("background-color","#ccc");
+				$("#nextButton").css("border","none");
+
+			})
+			$("#nextButton").on('click',function(){
+				$("#nextButton").css("background-color","white");
+				$("#nextButton").css("border","2px solid #ccc");
+				$("#preButton").css("background-color","#ccc");
+				$("#preButton").css("border","none");
+				
+			})
+		
+		$(".menuDetail").hide();
+		$(".bigMenuElement").hide();
+		
+		$("#navMobButt").on('click',function(){
+			if (flag === 0) {
+		     $(".menuDetail").show();
+		        flag = 1;
+		    } else {
+		    $(".menuDetail").hide();
+		        flag = 0;
+		    }
+			
+
+		})
+		$(".subHome").hide()
+		var flag = 0; // Initialize flag to 0
+
+		$("#Home").on('click', function() {
+		    if (flag === 0) {
+		        $("#subHome").show();
+		        $("#Home").css("transform", "rotate(180deg)");
+		        flag = 1;
+		    } else {
+		        $("#subHome").hide();
+		        $("#Home").css("transform", "rotate(0deg)");
+		        flag = 0;
+		    }
+		});
+		// $("#Home").on('click',function(){
+		// 	if(flag === true);
+		// 	$("#subHome").hide();
+		// })
+		$("#Room").on('click',function(){
+			if (flag === 0) {
+		       $("#subRoom").show();
+		        $("#Room").css("transform", "rotate(180deg)");
+		        flag = 1;
+		    } else {
+		        $("#subRoom").hide();
+		        $("#Room").css("transform", "rotate(0deg)");
+		        flag = 0;
+		    }	
+		})
+		$("#Element").on('click',function(){
+			if (flag === 0) {
+		      $("#bigElement").show();
+		       $("#Element").css("transform", "rotate(180deg)");
+		        flag = 1;
+		    } else {
+		        $("#bigElement").hide();
+		        $("#Element").css("transform", "rotate(0deg)");
+		        flag = 0;
+		    }	
+		})
+		$("#Page").on('click',function(){
+			if (flag === 0) {
+		      $("#subPage").show();
+		      $("#Page").css("transform", "rotate(180deg)");
+		        flag = 1;
+		    } else {
+	          $("#subPage").hide();
+	          $("#Page").css("transform", "rotate(0deg)");
+	          flag = 0;
+		    }	
+		})
+		$("#Blog").on('click',function(){
+			if (flag === 0) {
+		      $("#bigBlog").show();
+		      $("#Blog").css("transform", "rotate(180deg)");
+		        flag = 1;
+		    } else {
+	          $("#bigBlog").hide();
+	          $("#Blog").css("transform", "rotate(0deg)");
+	          flag = 0;
+		    }		
+		})
+		$(document).ready(function() {
+			  	$(window).scroll(function() {
+		        if ($(this).scrollTop() > 20) {
+		            $("#topBtn").fadeIn();
+		        } else {
+		            $("#topBtn").fadeOut();
+		        }
+    			});
+			    $("#topBtn").click(function() {
+			        $("html, body").animate({ scrollTop: 0 });
+			    });
+});
+
+
+		</script>
+	</body>
+</html>
